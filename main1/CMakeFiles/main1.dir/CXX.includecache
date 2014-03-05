@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/main1/../FEspace/FEspace.hpp
+vector
+-
+iostream
+-
+../Quadrature/Quadrature.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/main1/../FEspace/../Quadrature/Quadrature.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/main1/../FEspace/Polynomial.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/main1/../Quadrature/Quadrature.hpp
+string
+-
+iostream
+-
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/main1/main.cpp
+iostream
+-
+string
+-
+../FEspace/FEspace.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/main1/../FEspace/FEspace.hpp
+../Quadrature/Quadrature.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/main1/../Quadrature/Quadrature.hpp
+../FEspace/Polynomial.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/main1/../FEspace/Polynomial.hpp
+

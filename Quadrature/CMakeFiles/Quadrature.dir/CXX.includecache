@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/Quadrature.cpp
+Quadrature.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/Quadrature.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/Quadrature.hpp
+string
+-
+iostream
+-
+

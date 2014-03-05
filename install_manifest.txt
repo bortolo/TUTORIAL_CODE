@@ -1,0 +1,4 @@
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libGeometry.dylib
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libMesh.dylib
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libFEspace.dylib
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/bin/main1

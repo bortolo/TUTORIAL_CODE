@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/./Punto.hpp
+iostream
+-
+vector
+-
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Punto.cpp
+./Punto.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/./Punto.hpp
+

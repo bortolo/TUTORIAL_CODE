@@ -1,0 +1,5 @@
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEspace/CMakeFiles/FEspace.dir
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/CMakeFiles/Geometry.dir
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Mesh/CMakeFiles/Mesh.dir
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/CMakeFiles/Quadrature.dir
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/main1/CMakeFiles/main1.dir

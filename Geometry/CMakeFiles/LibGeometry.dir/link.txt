@@ -1,0 +1,1 @@
+/usr/bin/c++   -dynamiclib -Wl,-headerpad_max_install_names   -o libLibGeometry.dylib -install_name /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/libLibGeometry.dylib CMakeFiles/LibGeometry.dir/Punto.cpp.o 

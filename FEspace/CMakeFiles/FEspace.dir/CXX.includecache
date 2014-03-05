@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEspace/../Quadrature/Quadrature.hpp
+string
+-
+iostream
+-
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEspace/FEspace.cpp
+FEspace.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEspace/FEspace.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEspace/FEspace.hpp
+vector
+-
+iostream
+-
+../Quadrature/Quadrature.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEspace/../Quadrature/Quadrature.hpp
+
