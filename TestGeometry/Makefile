@@ -103,14 +103,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/TestGeometry/CMakeFiles/progress.marks
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f CMakeFiles/Makefile2 TestGeometry/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f CMakeFiles/Makefile2 TestGeometry/clean
 .PHONY : clean
 
 # The main clean target
@@ -119,96 +119,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f CMakeFiles/Makefile2 TestGeometry/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f CMakeFiles/Makefile2 TestGeometry/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Geometry
+# Convenience name for target.
+TestGeometry/CMakeFiles/TestGeometry.dir/rule:
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f CMakeFiles/Makefile2 TestGeometry/CMakeFiles/TestGeometry.dir/rule
+.PHONY : TestGeometry/CMakeFiles/TestGeometry.dir/rule
 
-# Build rule for target.
-Geometry: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Geometry
-.PHONY : Geometry
-
-# fast build rule for target.
-Geometry/fast:
-	$(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/build
-.PHONY : Geometry/fast
-
-#=============================================================================
-# Target rules for targets named Mesh
-
-# Build rule for target.
-Mesh: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Mesh
-.PHONY : Mesh
-
-# fast build rule for target.
-Mesh/fast:
-	$(MAKE) -f Mesh/CMakeFiles/Mesh.dir/build.make Mesh/CMakeFiles/Mesh.dir/build
-.PHONY : Mesh/fast
-
-#=============================================================================
-# Target rules for targets named FEspace
-
-# Build rule for target.
-FEspace: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 FEspace
-.PHONY : FEspace
-
-# fast build rule for target.
-FEspace/fast:
-	$(MAKE) -f FEspace/CMakeFiles/FEspace.dir/build.make FEspace/CMakeFiles/FEspace.dir/build
-.PHONY : FEspace/fast
-
-#=============================================================================
-# Target rules for targets named Quadrature
-
-# Build rule for target.
-Quadrature: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Quadrature
-.PHONY : Quadrature
-
-# fast build rule for target.
-Quadrature/fast:
-	$(MAKE) -f Quadrature/CMakeFiles/Quadrature.dir/build.make Quadrature/CMakeFiles/Quadrature.dir/build
-.PHONY : Quadrature/fast
-
-#=============================================================================
-# Target rules for targets named TestGeometry
-
-# Build rule for target.
-TestGeometry: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TestGeometry
+# Convenience name for target.
+TestGeometry: TestGeometry/CMakeFiles/TestGeometry.dir/rule
 .PHONY : TestGeometry
 
 # fast build rule for target.
 TestGeometry/fast:
-	$(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/build
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/build
 .PHONY : TestGeometry/fast
 
-#=============================================================================
-# Target rules for targets named main1
+Test.o: Test.cpp.o
+.PHONY : Test.o
 
-# Build rule for target.
-main1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main1
-.PHONY : main1
+# target to build an object file
+Test.cpp.o:
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/Test.cpp.o
+.PHONY : Test.cpp.o
 
-# fast build rule for target.
-main1/fast:
-	$(MAKE) -f main1/CMakeFiles/main1.dir/build.make main1/CMakeFiles/main1.dir/build
-.PHONY : main1/fast
+Test.i: Test.cpp.i
+.PHONY : Test.i
+
+# target to preprocess a source file
+Test.cpp.i:
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/Test.cpp.i
+.PHONY : Test.cpp.i
+
+Test.s: Test.cpp.s
+.PHONY : Test.s
+
+# target to generate assembly for a file
+Test.cpp.s:
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/Test.cpp.s
+.PHONY : Test.cpp.s
 
 # Help Target
 help:
@@ -216,17 +176,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... TestGeometry"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Geometry"
-	@echo "... Mesh"
-	@echo "... FEspace"
-	@echo "... Quadrature"
-	@echo "... TestGeometry"
-	@echo "... main1"
+	@echo "... Test.o"
+	@echo "... Test.i"
+	@echo "... Test.s"
 .PHONY : help
 
 
@@ -238,6 +196,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

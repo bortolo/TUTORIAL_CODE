@@ -202,6 +202,12 @@ TUTORIALCODE_BINARY_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_C
 //Value Computed by CMake
 TUTORIALCODE_SOURCE_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE
 
+//Value Computed by CMake
+TestGeometry_BINARY_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/TestGeometry
+
+//Value Computed by CMake
+TestGeometry_SOURCE_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/TestGeometry
+
 //Use fespace library
 USE_FESPACE:BOOL=ON
 
@@ -299,7 +305,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=6
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=7
 //Path to CMake installation.
 CMAKE_ROOT:INTERNAL=/opt/local/share/cmake-2.8
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS

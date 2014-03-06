@@ -15,6 +15,7 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "Geometry/CMakeLists.txt"
   "Mesh/CMakeLists.txt"
   "Quadrature/CMakeLists.txt"
+  "TestGeometry/CMakeLists.txt"
   "main1/CMakeLists.txt"
   "/opt/local/share/cmake-2.8/Modules/CMakeCInformation.cmake"
   "/opt/local/share/cmake-2.8/Modules/CMakeCXXInformation.cmake"
@@ -45,6 +46,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "Mesh/CMakeFiles/CMakeDirectoryInformation.cmake"
   "FEspace/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Quadrature/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "TestGeometry/CMakeFiles/CMakeDirectoryInformation.cmake"
   "main1/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -54,5 +56,6 @@ SET(CMAKE_DEPEND_INFO_FILES
   "Mesh/CMakeFiles/Mesh.dir/DependInfo.cmake"
   "FEspace/CMakeFiles/FEspace.dir/DependInfo.cmake"
   "Quadrature/CMakeFiles/Quadrature.dir/DependInfo.cmake"
+  "TestGeometry/CMakeFiles/TestGeometry.dir/DependInfo.cmake"
   "main1/CMakeFiles/main1.dir/DependInfo.cmake"
   )

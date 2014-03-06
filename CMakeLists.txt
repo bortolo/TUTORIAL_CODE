@@ -24,5 +24,7 @@ add_subdirectory(Mesh)
 add_subdirectory(FEspace)
 add_subdirectory(Quadrature)
 
+add_subdirectory(TestGeometry)
+
 add_subdirectory(main1)
 

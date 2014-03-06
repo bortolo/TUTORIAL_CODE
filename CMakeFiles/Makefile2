@@ -256,6 +256,56 @@ clean: Quadrature/CMakeFiles/Quadrature.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory TestGeometry
+
+# Convenience name for "all" pass in the directory.
+TestGeometry/all: TestGeometry/CMakeFiles/TestGeometry.dir/all
+.PHONY : TestGeometry/all
+
+# Convenience name for "clean" pass in the directory.
+TestGeometry/clean: TestGeometry/CMakeFiles/TestGeometry.dir/clean
+.PHONY : TestGeometry/clean
+
+# Convenience name for "preinstall" pass in the directory.
+TestGeometry/preinstall:
+.PHONY : TestGeometry/preinstall
+
+#=============================================================================
+# Target rules for target TestGeometry/CMakeFiles/TestGeometry.dir
+
+# All Build rule for target.
+TestGeometry/CMakeFiles/TestGeometry.dir/all: Geometry/CMakeFiles/Geometry.dir/all
+	$(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/depend
+	$(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles  5
+	@echo "Built target TestGeometry"
+.PHONY : TestGeometry/CMakeFiles/TestGeometry.dir/all
+
+# Include target in all.
+all: TestGeometry/CMakeFiles/TestGeometry.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+TestGeometry/CMakeFiles/TestGeometry.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 TestGeometry/CMakeFiles/TestGeometry.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 0
+.PHONY : TestGeometry/CMakeFiles/TestGeometry.dir/rule
+
+# Convenience name for target.
+TestGeometry: TestGeometry/CMakeFiles/TestGeometry.dir/rule
+.PHONY : TestGeometry
+
+# clean rule for target.
+TestGeometry/CMakeFiles/TestGeometry.dir/clean:
+	$(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/clean
+.PHONY : TestGeometry/CMakeFiles/TestGeometry.dir/clean
+
+# clean rule for target.
+clean: TestGeometry/CMakeFiles/TestGeometry.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory main1
 
 # Convenience name for "all" pass in the directory.
@@ -280,7 +330,7 @@ main1/CMakeFiles/main1.dir/all: FEspace/CMakeFiles/FEspace.dir/all
 main1/CMakeFiles/main1.dir/all: Quadrature/CMakeFiles/Quadrature.dir/all
 	$(MAKE) -f main1/CMakeFiles/main1.dir/build.make main1/CMakeFiles/main1.dir/depend
 	$(MAKE) -f main1/CMakeFiles/main1.dir/build.make main1/CMakeFiles/main1.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles  5
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles  6
 	@echo "Built target main1"
 .PHONY : main1/CMakeFiles/main1.dir/all
 
