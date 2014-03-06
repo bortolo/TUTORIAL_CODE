@@ -6,7 +6,7 @@
 #include <iostream>
 
 #include "../Quadrature/Quadrature.hpp"
-
+#include "../EIGEN/Eigen/Dense"
 
 class FEspace{
 
