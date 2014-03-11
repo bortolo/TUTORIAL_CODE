@@ -4,7 +4,8 @@ project(Geometry)
 if(COMPILE_GEOMETRY)
 
 set (${PROJECT_NAME}_headers "Punto.hpp")
-set (${PROJECT_NAME}_sources "Punto.cpp")
+set (${PROJECT_NAME}_sources "Geometry.cpp")
+
 
 if(USE_SHARED)
 	add_library(${PROJECT_NAME} SHARED ${${PROJECT_NAME}_headers}
@@ -16,7 +17,6 @@ endif(USE_SHARED)
 
 target_link_libraries(${PROJECT_NAME} Geometry)
 
-endif(COMPILE_GEOMETRY)
 
 install(TARGETS ${PROJECT_NAME} 
 		RUNTIME DESTINATION bin
@@ -24,3 +24,4 @@ install(TARGETS ${PROJECT_NAME}
 		ARCHIVE DESTINATION lib/static)
 
 
+endif(COMPILE_GEOMETRY)

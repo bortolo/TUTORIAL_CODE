@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Punto.cpp" "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/CMakeFiles/Geometry.dir/Punto.cpp.o"
+  "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Geometry.cpp" "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "Clang")
 

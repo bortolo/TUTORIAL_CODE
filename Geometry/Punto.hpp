@@ -21,26 +21,24 @@ public:
 
 };
 
-template<int dim>
-Punto<dim>::Punto(std::vector<double> & PT){
-  pt.resize(dim,0.0);
-  for(size_t i(0);i<dim;i++)
-    pt[i]=PT[i];
-}
+#include "PuntoDef.hpp"
 
 template<int dim>
-Punto<dim>::Punto(const Punto<dim> & PT){pt=PT.pt;}
+class Triangle{
 
-template<int dim>
-Punto<dim>::~Punto(){}
+private:
+  std::vector<Punto<dim> > M_coord;
+  Triangle(){};
 
-template<int dim>
-void Punto<dim>::ShowMe(){
+public:
+  Triangle(Punto<dim> &,Punto<dim> &,Punto<dim> &);
+  Triangle(std::vector<Punto<dim> > &);
+  Triangle(const Triangle &);
+  ~Triangle();
 
-  for(size_t i(0);i<dim;i++)
-    std::cout<<pt[i]<<std::endl;
+  
 
-}
+};
 
 
 /*

@@ -32,7 +32,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/TestGeometry" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/TestGeometry")
     EXECUTE_PROCESS(COMMAND "/usr/bin/install_name_tool"
-      -change "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/libGeometry.dylib" "libGeometry.dylib"
+      -change "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/libGeometry.dylib" "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libGeometry.dylib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/TestGeometry")
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")

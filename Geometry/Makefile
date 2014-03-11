@@ -146,29 +146,29 @@ Geometry/fast:
 	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/build
 .PHONY : Geometry/fast
 
-Punto.o: Punto.cpp.o
-.PHONY : Punto.o
+Geometry.o: Geometry.cpp.o
+.PHONY : Geometry.o
 
 # target to build an object file
-Punto.cpp.o:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/Punto.cpp.o
-.PHONY : Punto.cpp.o
+Geometry.cpp.o:
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.o
+.PHONY : Geometry.cpp.o
 
-Punto.i: Punto.cpp.i
-.PHONY : Punto.i
+Geometry.i: Geometry.cpp.i
+.PHONY : Geometry.i
 
 # target to preprocess a source file
-Punto.cpp.i:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/Punto.cpp.i
-.PHONY : Punto.cpp.i
+Geometry.cpp.i:
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.i
+.PHONY : Geometry.cpp.i
 
-Punto.s: Punto.cpp.s
-.PHONY : Punto.s
+Geometry.s: Geometry.cpp.s
+.PHONY : Geometry.s
 
 # target to generate assembly for a file
-Punto.cpp.s:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/Punto.cpp.s
-.PHONY : Punto.cpp.s
+Geometry.cpp.s:
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.s
+.PHONY : Geometry.cpp.s
 
 # Help Target
 help:
@@ -182,9 +182,9 @@ help:
 	@echo "... install/local"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Punto.o"
-	@echo "... Punto.i"
-	@echo "... Punto.s"
+	@echo "... Geometry.o"
+	@echo "... Geometry.i"
+	@echo "... Geometry.s"
 .PHONY : help
 
 

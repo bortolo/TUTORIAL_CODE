@@ -6,17 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/TestGeometry/../Geometry/Punto.hpp
-iostream
--
-vector
--
-
-/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/TestGeometry/Test.cpp
-iostream
--
-string
--
-../Geometry/Punto.hpp
-/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/TestGeometry/../Geometry/Punto.hpp
-

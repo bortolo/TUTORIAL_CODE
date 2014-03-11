@@ -11,27 +11,31 @@ ${${PROJECT_NAME}_sources} )
 
 
 
-if (USE_FESPACE)
+if (COMPILE_FESPACE)
   set (EXTRA_LIBS ${EXTRA_LIBS} FEspace)
-endif (USE_FESPACE)
+endif (COMPILE_FESPACE)
 
-if (USE_MESH)
+if (COMPILE_MESH)
   set (EXTRA_LIBS ${EXTRA_LIBS} Mesh)
-endif (USE_MESH)
+endif (COMPILE_MESH)
 
-if (USE_GEOMETRY)
+if (COMPILE_GEOMETRY)
   set (EXTRA_LIBS ${EXTRA_LIBS} Geometry)
-endif (USE_GEOMETRY)
+endif (COMPILE_GEOMETRY)
 
-set (EXTRA_LIBS ${EXTRA_LIBS} Quadrature)
+if (COMPILE_QUAD)
+   set (EXTRA_LIBS ${EXTRA_LIBS} Quadrature)
+endif(COMPILE_QUAD)
 
 target_link_libraries(${PROJECT_NAME} ${EXTRA_LIBS})
 
-endif(COMPILE_MAIN1)
 
 install(TARGETS ${PROJECT_NAME} 
 		RUNTIME DESTINATION bin
 		LIBRARY DESTINATION lib
 		ARCHIVE DESTINATION lib/static)
+
+endif(COMPILE_MAIN1)
+
 
 

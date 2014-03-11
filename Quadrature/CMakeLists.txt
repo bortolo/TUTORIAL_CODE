@@ -1,7 +1,7 @@
 
 project(Quadrature)
 
-if(COMPILE_MESH)
+if(COMPILE_QUAD)
 
 set (${PROJECT_NAME}_headers "Quadrature.cpp")
 set (${PROJECT_NAME}_sources "Quadrature.cpp")
@@ -16,11 +16,11 @@ endif(USE_SHARED)
 
 target_link_libraries(${PROJECT_NAME} Quadrature)
 
-endif(COMPILE_MESH)
+
 
 install(TARGETS ${PROJECT_NAME} 
 		RUNTIME DESTINATION bin
 		LIBRARY DESTINATION lib
 		ARCHIVE DESTINATION lib/static)
-
+endif(COMPILE_QUAD)
 

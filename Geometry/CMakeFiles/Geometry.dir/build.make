@@ -52,37 +52,37 @@ include Geometry/CMakeFiles/Geometry.dir/progress.make
 # Include the compile flags for this target's objects.
 include Geometry/CMakeFiles/Geometry.dir/flags.make
 
-Geometry/CMakeFiles/Geometry.dir/Punto.cpp.o: Geometry/CMakeFiles/Geometry.dir/flags.make
-Geometry/CMakeFiles/Geometry.dir/Punto.cpp.o: Geometry/Punto.cpp
+Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.o: Geometry/CMakeFiles/Geometry.dir/flags.make
+Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.o: Geometry/Geometry.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Geometry/CMakeFiles/Geometry.dir/Punto.cpp.o"
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Geometry.dir/Punto.cpp.o -c /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Punto.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.o"
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Geometry.dir/Geometry.cpp.o -c /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Geometry.cpp
 
-Geometry/CMakeFiles/Geometry.dir/Punto.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Geometry.dir/Punto.cpp.i"
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Punto.cpp > CMakeFiles/Geometry.dir/Punto.cpp.i
+Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Geometry.dir/Geometry.cpp.i"
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Geometry.cpp > CMakeFiles/Geometry.dir/Geometry.cpp.i
 
-Geometry/CMakeFiles/Geometry.dir/Punto.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Geometry.dir/Punto.cpp.s"
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Punto.cpp -o CMakeFiles/Geometry.dir/Punto.cpp.s
+Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Geometry.dir/Geometry.cpp.s"
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Geometry.cpp -o CMakeFiles/Geometry.dir/Geometry.cpp.s
 
-Geometry/CMakeFiles/Geometry.dir/Punto.cpp.o.requires:
-.PHONY : Geometry/CMakeFiles/Geometry.dir/Punto.cpp.o.requires
+Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.o.requires:
+.PHONY : Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.o.requires
 
-Geometry/CMakeFiles/Geometry.dir/Punto.cpp.o.provides: Geometry/CMakeFiles/Geometry.dir/Punto.cpp.o.requires
-	$(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/Punto.cpp.o.provides.build
-.PHONY : Geometry/CMakeFiles/Geometry.dir/Punto.cpp.o.provides
+Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.o.provides: Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.o.requires
+	$(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.o.provides.build
+.PHONY : Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.o.provides
 
-Geometry/CMakeFiles/Geometry.dir/Punto.cpp.o.provides.build: Geometry/CMakeFiles/Geometry.dir/Punto.cpp.o
+Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.o.provides.build: Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.o
 
 # Object files for target Geometry
 Geometry_OBJECTS = \
-"CMakeFiles/Geometry.dir/Punto.cpp.o"
+"CMakeFiles/Geometry.dir/Geometry.cpp.o"
 
 # External object files for target Geometry
 Geometry_EXTERNAL_OBJECTS =
 
-Geometry/libGeometry.dylib: Geometry/CMakeFiles/Geometry.dir/Punto.cpp.o
+Geometry/libGeometry.dylib: Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.o
 Geometry/libGeometry.dylib: Geometry/CMakeFiles/Geometry.dir/build.make
 Geometry/libGeometry.dylib: Geometry/CMakeFiles/Geometry.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libGeometry.dylib"
@@ -92,7 +92,7 @@ Geometry/libGeometry.dylib: Geometry/CMakeFiles/Geometry.dir/link.txt
 Geometry/CMakeFiles/Geometry.dir/build: Geometry/libGeometry.dylib
 .PHONY : Geometry/CMakeFiles/Geometry.dir/build
 
-Geometry/CMakeFiles/Geometry.dir/requires: Geometry/CMakeFiles/Geometry.dir/Punto.cpp.o.requires
+Geometry/CMakeFiles/Geometry.dir/requires: Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.o.requires
 .PHONY : Geometry/CMakeFiles/Geometry.dir/requires
 
 Geometry/CMakeFiles/Geometry.dir/clean:

@@ -17,11 +17,11 @@ endif(USE_SHARED)
 
 target_link_libraries(${PROJECT_NAME} FEspace)
 
-endif(COMPILE_FESPACE)
+
 
 install(TARGETS ${PROJECT_NAME} 
 		RUNTIME DESTINATION bin
 		LIBRARY DESTINATION lib
 		ARCHIVE DESTINATION lib/static)
 
-
+endif(COMPILE_FESPACE)

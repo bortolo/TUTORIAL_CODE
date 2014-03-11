@@ -16,7 +16,6 @@ endif(USE_SHARED)
 
 target_link_libraries(${PROJECT_NAME} Mesh)
 
-endif(COMPILE_MESH)
 
 install(TARGETS ${PROJECT_NAME} 
 		RUNTIME DESTINATION bin
@@ -24,3 +23,4 @@ install(TARGETS ${PROJECT_NAME}
 		ARCHIVE DESTINATION lib/static)
 
 
+endif(COMPILE_MESH)

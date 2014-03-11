@@ -1,6 +1,8 @@
 
 project(TestGeometry)
 
+if(COMPILE_TESTGEOM)
+
 set (${PROJECT_NAME}_headers "")
 set (${PROJECT_NAME}_sources Test.cpp)
 
@@ -17,4 +19,4 @@ install(TARGETS ${PROJECT_NAME}
 		LIBRARY DESTINATION lib
 		ARCHIVE DESTINATION lib/static)
 
-
+endif(COMPILE_TESTGEOM)

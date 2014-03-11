@@ -32,7 +32,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libFEspace.dylib" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libFEspace.dylib")
     EXECUTE_PROCESS(COMMAND "/usr/bin/install_name_tool"
-      -id "libFEspace.dylib"
+      -id "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libFEspace.dylib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libFEspace.dylib")
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
