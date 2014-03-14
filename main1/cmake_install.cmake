@@ -27,16 +27,3 @@ IF(NOT CMAKE_INSTALL_COMPONENT)
   ENDIF(COMPONENT)
 ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
-IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/main1/main1")
-  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/main1" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/main1")
-    EXECUTE_PROCESS(COMMAND "/usr/bin/install_name_tool"
-      -change "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEspace/libFEspace.dylib" "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libFEspace.dylib"
-      -change "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/libGeometry.dylib" "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libGeometry.dylib"
-      -change "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Mesh/libMesh.dylib" "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libMesh.dylib"
-      -change "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/libQuadrature.dylib" "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libQuadrature.dylib"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/main1")
-  ENDIF()
-ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-

@@ -15,7 +15,9 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "Geometry/CMakeLists.txt"
   "Mesh/CMakeLists.txt"
   "Quadrature/CMakeLists.txt"
+  "Quadrature1D/CMakeLists.txt"
   "TestGeometry/CMakeLists.txt"
+  "TestQuad1D/CMakeLists.txt"
   "main1/CMakeLists.txt"
   "/opt/local/share/cmake-2.8/Modules/CMakeCInformation.cmake"
   "/opt/local/share/cmake-2.8/Modules/CMakeCXXInformation.cmake"
@@ -46,16 +48,14 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "Mesh/CMakeFiles/CMakeDirectoryInformation.cmake"
   "FEspace/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Quadrature/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Quadrature1D/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "TestQuad1D/CMakeFiles/CMakeDirectoryInformation.cmake"
   "TestGeometry/CMakeFiles/CMakeDirectoryInformation.cmake"
   "main1/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
-  "Geometry/CMakeFiles/Geometry.dir/DependInfo.cmake"
-  "Mesh/CMakeFiles/Mesh.dir/DependInfo.cmake"
-  "FEspace/CMakeFiles/FEspace.dir/DependInfo.cmake"
-  "Quadrature/CMakeFiles/Quadrature.dir/DependInfo.cmake"
-  "TestGeometry/CMakeFiles/TestGeometry.dir/DependInfo.cmake"
-  "main1/CMakeFiles/main1.dir/DependInfo.cmake"
+  "Quadrature1D/CMakeFiles/Quadrature1D.dir/DependInfo.cmake"
+  "TestQuad1D/CMakeFiles/TestQuad1D.dir/DependInfo.cmake"
   )

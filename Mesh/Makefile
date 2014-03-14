@@ -132,59 +132,17 @@ depend:
 	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-Mesh/CMakeFiles/Mesh.dir/rule:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f CMakeFiles/Makefile2 Mesh/CMakeFiles/Mesh.dir/rule
-.PHONY : Mesh/CMakeFiles/Mesh.dir/rule
-
-# Convenience name for target.
-Mesh: Mesh/CMakeFiles/Mesh.dir/rule
-.PHONY : Mesh
-
-# fast build rule for target.
-Mesh/fast:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Mesh/CMakeFiles/Mesh.dir/build.make Mesh/CMakeFiles/Mesh.dir/build
-.PHONY : Mesh/fast
-
-Mesh.o: Mesh.cpp.o
-.PHONY : Mesh.o
-
-# target to build an object file
-Mesh.cpp.o:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Mesh/CMakeFiles/Mesh.dir/build.make Mesh/CMakeFiles/Mesh.dir/Mesh.cpp.o
-.PHONY : Mesh.cpp.o
-
-Mesh.i: Mesh.cpp.i
-.PHONY : Mesh.i
-
-# target to preprocess a source file
-Mesh.cpp.i:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Mesh/CMakeFiles/Mesh.dir/build.make Mesh/CMakeFiles/Mesh.dir/Mesh.cpp.i
-.PHONY : Mesh.cpp.i
-
-Mesh.s: Mesh.cpp.s
-.PHONY : Mesh.s
-
-# target to generate assembly for a file
-Mesh.cpp.s:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Mesh/CMakeFiles/Mesh.dir/build.make Mesh/CMakeFiles/Mesh.dir/Mesh.cpp.s
-.PHONY : Mesh.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... Mesh"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Mesh.o"
-	@echo "... Mesh.i"
-	@echo "... Mesh.s"
 .PHONY : help
 
 

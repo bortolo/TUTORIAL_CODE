@@ -6,3 +6,25 @@
 
 #IncludeRegexTransform: 
 
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Punto.hpp
+iostream
+-
+vector
+-
+PuntoDef.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/PuntoDef.hpp
+TriangleDef.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/TriangleDef.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/PuntoDef.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/TriangleDef.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/TestGeometry/Test.cpp
+iostream
+-
+string
+-
+../Geometry/Punto.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Punto.hpp
+

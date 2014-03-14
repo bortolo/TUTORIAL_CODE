@@ -1,0 +1,1 @@
+/usr/bin/c++   -dynamiclib -Wl,-headerpad_max_install_names   -o libQuadrature1D.dylib -install_name /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature1D/libQuadrature1D.dylib CMakeFiles/Quadrature1D.dir/Quadrature1D.cpp.o CMakeFiles/Quadrature1D.dir/NumericalQuad.cpp.o 

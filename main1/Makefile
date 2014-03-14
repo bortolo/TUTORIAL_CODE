@@ -132,44 +132,6 @@ depend:
 	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-main1/CMakeFiles/main1.dir/rule:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f CMakeFiles/Makefile2 main1/CMakeFiles/main1.dir/rule
-.PHONY : main1/CMakeFiles/main1.dir/rule
-
-# Convenience name for target.
-main1: main1/CMakeFiles/main1.dir/rule
-.PHONY : main1
-
-# fast build rule for target.
-main1/fast:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f main1/CMakeFiles/main1.dir/build.make main1/CMakeFiles/main1.dir/build
-.PHONY : main1/fast
-
-main.o: main.cpp.o
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f main1/CMakeFiles/main1.dir/build.make main1/CMakeFiles/main1.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f main1/CMakeFiles/main1.dir/build.make main1/CMakeFiles/main1.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f main1/CMakeFiles/main1.dir/build.make main1/CMakeFiles/main1.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -180,11 +142,7 @@ help:
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... list_install_components"
-	@echo "... main1"
 	@echo "... rebuild_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 

@@ -132,59 +132,17 @@ depend:
 	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-TestGeometry/CMakeFiles/TestGeometry.dir/rule:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f CMakeFiles/Makefile2 TestGeometry/CMakeFiles/TestGeometry.dir/rule
-.PHONY : TestGeometry/CMakeFiles/TestGeometry.dir/rule
-
-# Convenience name for target.
-TestGeometry: TestGeometry/CMakeFiles/TestGeometry.dir/rule
-.PHONY : TestGeometry
-
-# fast build rule for target.
-TestGeometry/fast:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/build
-.PHONY : TestGeometry/fast
-
-Test.o: Test.cpp.o
-.PHONY : Test.o
-
-# target to build an object file
-Test.cpp.o:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/Test.cpp.o
-.PHONY : Test.cpp.o
-
-Test.i: Test.cpp.i
-.PHONY : Test.i
-
-# target to preprocess a source file
-Test.cpp.i:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/Test.cpp.i
-.PHONY : Test.cpp.i
-
-Test.s: Test.cpp.s
-.PHONY : Test.s
-
-# target to generate assembly for a file
-Test.cpp.s:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/Test.cpp.s
-.PHONY : Test.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... TestGeometry"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Test.o"
-	@echo "... Test.i"
-	@echo "... Test.s"
 .PHONY : help
 
 

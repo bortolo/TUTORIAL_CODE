@@ -12,9 +12,11 @@ option (COMPILE_FESPACE  "Compile fespace library" ON)
 option (COMPILE_GEOMETRY  "Compile geometry library" ON) 
 option (COMPILE_MESH  "Compile mesh library" ON) 
 option (COMPILE_QUAD  "Compile quad library" ON) 
+option (COMPILE_QUAD1D  "Compile quad1D library" ON) 
 
 option (COMPILE_MAIN1  "Compile exe main1" ON) 
 option (COMPILE_TESTGEOM  "Compile exe testgeom" ON) 
+option (COMPILE_TESTQUAD1D  "Compile exe testgeom" ON) 
 
 option (USE_SHARED  "Use shared library" ON) 
 
@@ -22,7 +24,9 @@ add_subdirectory(Geometry)
 add_subdirectory(Mesh)
 add_subdirectory(FEspace)
 add_subdirectory(Quadrature)
+add_subdirectory(Quadrature1D)
 
+add_subdirectory(TestQuad1D)
 add_subdirectory(TestGeometry)
 add_subdirectory(main1)
 

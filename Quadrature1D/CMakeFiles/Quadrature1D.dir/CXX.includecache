@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature1D/NumericalQuad.cpp
+NumericalQuad.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature1D/NumericalQuad.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature1D/NumericalQuad.hpp
+Quadrature1D.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature1D/Quadrature1D.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature1D/Quadrature1D.hpp
+vector
+-
+

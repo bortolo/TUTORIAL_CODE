@@ -9,13 +9,13 @@ class Punto{
 private:
 
   std::vector<double> pt;
-  Punto();
 
 public:
   
+  Punto(){pt.resize(dim,0.0);};
   Punto(std::vector<double> &);
   Punto(const Punto<dim> &);
-  //  Punto<dim> & operator=(const Punto<dim>&);
+  Punto<dim> & operator=(Punto<dim> const &);
   ~Punto();
   void ShowMe();
 
@@ -28,17 +28,35 @@ class Triangle{
 
 private:
   std::vector<Punto<dim> > M_coord;
-  Triangle(){};
 
 public:
+  Triangle(){M_coord.resize(3,Punto<dim>());};
   Triangle(Punto<dim> &,Punto<dim> &,Punto<dim> &);
   Triangle(std::vector<Punto<dim> > &);
   Triangle(const Triangle &);
-  ~Triangle();
-
-  
+  ~Triangle(); 
+  void ShowMe();
 
 };
+
+#include "TriangleDef.hpp"
+
+
+class Tetra{
+
+private:
+  std::vector<Punto<3> > M_coord;
+public:
+  Tetra(){M_coord.resize(4,Punto<3>());}
+  Tetra(Punto<3> &,Punto<3> &,Punto<3> &,Punto<3> &);
+  Tetra(std::vector<Punto<3> > &);
+  Tetra(const Tetra & A){M_coord=A.M_coord;}
+  ~Tetra(){};
+  void ShowMe();
+
+};
+
+
 
 
 /*

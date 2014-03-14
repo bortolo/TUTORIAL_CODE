@@ -133,82 +133,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Geometry
+# Target rules for targets named Quadrature1D
 
 # Build rule for target.
-Geometry: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Geometry
-.PHONY : Geometry
+Quadrature1D: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Quadrature1D
+.PHONY : Quadrature1D
 
 # fast build rule for target.
-Geometry/fast:
-	$(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/build
-.PHONY : Geometry/fast
+Quadrature1D/fast:
+	$(MAKE) -f Quadrature1D/CMakeFiles/Quadrature1D.dir/build.make Quadrature1D/CMakeFiles/Quadrature1D.dir/build
+.PHONY : Quadrature1D/fast
 
 #=============================================================================
-# Target rules for targets named Mesh
+# Target rules for targets named TestQuad1D
 
 # Build rule for target.
-Mesh: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Mesh
-.PHONY : Mesh
+TestQuad1D: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestQuad1D
+.PHONY : TestQuad1D
 
 # fast build rule for target.
-Mesh/fast:
-	$(MAKE) -f Mesh/CMakeFiles/Mesh.dir/build.make Mesh/CMakeFiles/Mesh.dir/build
-.PHONY : Mesh/fast
-
-#=============================================================================
-# Target rules for targets named FEspace
-
-# Build rule for target.
-FEspace: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 FEspace
-.PHONY : FEspace
-
-# fast build rule for target.
-FEspace/fast:
-	$(MAKE) -f FEspace/CMakeFiles/FEspace.dir/build.make FEspace/CMakeFiles/FEspace.dir/build
-.PHONY : FEspace/fast
-
-#=============================================================================
-# Target rules for targets named Quadrature
-
-# Build rule for target.
-Quadrature: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Quadrature
-.PHONY : Quadrature
-
-# fast build rule for target.
-Quadrature/fast:
-	$(MAKE) -f Quadrature/CMakeFiles/Quadrature.dir/build.make Quadrature/CMakeFiles/Quadrature.dir/build
-.PHONY : Quadrature/fast
-
-#=============================================================================
-# Target rules for targets named TestGeometry
-
-# Build rule for target.
-TestGeometry: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TestGeometry
-.PHONY : TestGeometry
-
-# fast build rule for target.
-TestGeometry/fast:
-	$(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/build
-.PHONY : TestGeometry/fast
-
-#=============================================================================
-# Target rules for targets named main1
-
-# Build rule for target.
-main1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main1
-.PHONY : main1
-
-# fast build rule for target.
-main1/fast:
-	$(MAKE) -f main1/CMakeFiles/main1.dir/build.make main1/CMakeFiles/main1.dir/build
-.PHONY : main1/fast
+TestQuad1D/fast:
+	$(MAKE) -f TestQuad1D/CMakeFiles/TestQuad1D.dir/build.make TestQuad1D/CMakeFiles/TestQuad1D.dir/build
+.PHONY : TestQuad1D/fast
 
 # Help Target
 help:
@@ -221,12 +169,8 @@ help:
 	@echo "... install/local"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Geometry"
-	@echo "... Mesh"
-	@echo "... FEspace"
-	@echo "... Quadrature"
-	@echo "... TestGeometry"
-	@echo "... main1"
+	@echo "... Quadrature1D"
+	@echo "... TestQuad1D"
 .PHONY : help
 
 

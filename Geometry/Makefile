@@ -132,59 +132,17 @@ depend:
 	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-Geometry/CMakeFiles/Geometry.dir/rule:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f CMakeFiles/Makefile2 Geometry/CMakeFiles/Geometry.dir/rule
-.PHONY : Geometry/CMakeFiles/Geometry.dir/rule
-
-# Convenience name for target.
-Geometry: Geometry/CMakeFiles/Geometry.dir/rule
-.PHONY : Geometry
-
-# fast build rule for target.
-Geometry/fast:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/build
-.PHONY : Geometry/fast
-
-Geometry.o: Geometry.cpp.o
-.PHONY : Geometry.o
-
-# target to build an object file
-Geometry.cpp.o:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.o
-.PHONY : Geometry.cpp.o
-
-Geometry.i: Geometry.cpp.i
-.PHONY : Geometry.i
-
-# target to preprocess a source file
-Geometry.cpp.i:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.i
-.PHONY : Geometry.cpp.i
-
-Geometry.s: Geometry.cpp.s
-.PHONY : Geometry.s
-
-# target to generate assembly for a file
-Geometry.cpp.s:
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/Geometry.cpp.s
-.PHONY : Geometry.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... Geometry"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Geometry.o"
-	@echo "... Geometry.i"
-	@echo "... Geometry.s"
 .PHONY : help
 
 

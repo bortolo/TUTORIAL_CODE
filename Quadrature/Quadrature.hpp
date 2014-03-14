@@ -5,8 +5,7 @@
 #include <string>
 #include <iostream>
 
-typedef double (*PtrFunction)(double,double,double);
-
+typedef double (*PtrFunction)(double);
 
 class Quadrature{
 
