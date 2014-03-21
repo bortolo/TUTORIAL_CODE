@@ -6,12 +6,42 @@
 
 #IncludeRegexTransform: 
 
-/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/Quadrature.cpp
-Quadrature.hpp
-/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/Quadrature.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Geometry.hpp
+iostream
+-
+vector
+-
+PuntoDef.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/PuntoDef.hpp
+TriangleDef.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/TriangleDef.hpp
 
-/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/Quadrature.hpp
-string
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/PuntoDef.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/TriangleDef.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/NumericalQuad.cpp
+NumericalQuad.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/NumericalQuad.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/NumericalQuad.hpp
+iostream
+-
+../Geometry/Geometry.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Geometry.hpp
+../QuadratureRules/Quadrature.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/QuadratureRules/Quadrature.hpp
+../QuadratureRules/Quadrature1D.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/QuadratureRules/Quadrature1D.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/QuadratureRules/Quadrature.hpp
+vector
+-
+../Geometry/Geometry.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Geometry.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/QuadratureRules/Quadrature1D.hpp
+vector
 -
 iostream
 -

@@ -3,7 +3,7 @@ project(Geometry)
 
 if(COMPILE_GEOMETRY)
 
-set (${PROJECT_NAME}_headers "Punto.hpp")
+set (${PROJECT_NAME}_headers "Geometry.hpp")
 set (${PROJECT_NAME}_sources "Geometry.cpp")
 
 

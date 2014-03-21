@@ -32,7 +32,9 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/TestQuad1D" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/TestQuad1D")
     EXECUTE_PROCESS(COMMAND "/usr/bin/install_name_tool"
-      -change "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature1D/libQuadrature1D.dylib" "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libQuadrature1D.dylib"
+      -change "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FactoryQuad/libMyQuadRules.dylib" "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libMyQuadRules.dylib"
+      -change "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/libQuadrature.dylib" "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libQuadrature.dylib"
+      -change "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/QuadratureRules/libQuadratureRules.dylib" "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libQuadratureRules.dylib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/TestQuad1D")
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")

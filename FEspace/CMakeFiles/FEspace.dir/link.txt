@@ -1,1 +1,1 @@
-/usr/bin/c++   -dynamiclib -Wl,-headerpad_max_install_names   -o libFEspace.dylib -install_name /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEspace/libFEspace.dylib CMakeFiles/FEspace.dir/FEspace.cpp.o 
+/usr/bin/c++  -std=c++11 -dynamiclib -Wl,-headerpad_max_install_names   -o libFEspace.dylib -install_name /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEspace/libFEspace.dylib CMakeFiles/FEspace.dir/FEspace.cpp.o 

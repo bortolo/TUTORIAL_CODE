@@ -2,11 +2,12 @@
 #include <iostream>
 #include <string>
 
-#include "../Geometry/Punto.hpp"
+#include "../Geometry/Geometry.hpp"
+#include "../Geometry/ShapeManage.hpp"
 
 int main (int argc, char *argv[])
 {
-
+  /*
   
   std::vector<double> punto1(3,0.0);
   punto1[0]=1.0;
@@ -51,6 +52,14 @@ int main (int argc, char *argv[])
   tetra1.ShowMe();
   Tetra tetra2(coord);
   tetra2.ShowMe();
+  */
+
   
+  ShapeManage<OpNewCreator<Triangle<3> > > ManageTriangle;
+  std::cout<<ManageTriangle.measure()<<std::endl;
+
+  ShapeManage<MallocCreator<Tetra> > ManageTetra;
+  std::cout<<ManageTetra.measure()<<std::endl;
+
   return 0;
 }

@@ -1,2 +1,7 @@
-/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature1D/CMakeFiles/Quadrature1D.dir
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/CMakeFiles/Geometry.dir
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FactoryQuad/CMakeFiles/MyQuadRules.dir
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/CMakeFiles/Quadrature.dir
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/QuadratureRules/CMakeFiles/QuadratureRules.dir
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/TestGeometry/CMakeFiles/TestGeometry.dir
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/TestQuad/CMakeFiles/TestQuad.dir
 /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/TestQuad1D/CMakeFiles/TestQuad1D.dir

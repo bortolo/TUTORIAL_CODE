@@ -1,6 +1,5 @@
 /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libGeometry.dylib
-/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libMesh.dylib
-/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libFEspace.dylib
 /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libQuadrature.dylib
-/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/bin/TestGeometry
-/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/bin/main1
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libQuadratureRules.dylib
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/lib/libMyQuadRules.dylib
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEMOS/bin/TestQuad1D

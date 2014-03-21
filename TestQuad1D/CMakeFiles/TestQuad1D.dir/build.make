@@ -84,7 +84,9 @@ TestQuad1D_EXTERNAL_OBJECTS =
 
 TestQuad1D/TestQuad1D: TestQuad1D/CMakeFiles/TestQuad1D.dir/main.cpp.o
 TestQuad1D/TestQuad1D: TestQuad1D/CMakeFiles/TestQuad1D.dir/build.make
-TestQuad1D/TestQuad1D: Quadrature1D/libQuadrature1D.dylib
+TestQuad1D/TestQuad1D: FactoryQuad/libMyQuadRules.dylib
+TestQuad1D/TestQuad1D: Quadrature/libQuadrature.dylib
+TestQuad1D/TestQuad1D: QuadratureRules/libQuadratureRules.dylib
 TestQuad1D/TestQuad1D: TestQuad1D/CMakeFiles/TestQuad1D.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable TestQuad1D"
 	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/TestQuad1D && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TestQuad1D.dir/link.txt --verbose=$(VERBOSE)

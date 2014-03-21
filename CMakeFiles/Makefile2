@@ -59,16 +59,51 @@ CMAKE_BINARY_DIR = /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE
 # Directory level rules for directory Geometry
 
 # Convenience name for "all" pass in the directory.
-Geometry/all:
+Geometry/all: Geometry/CMakeFiles/Geometry.dir/all
 .PHONY : Geometry/all
 
 # Convenience name for "clean" pass in the directory.
-Geometry/clean:
+Geometry/clean: Geometry/CMakeFiles/Geometry.dir/clean
 .PHONY : Geometry/clean
 
 # Convenience name for "preinstall" pass in the directory.
 Geometry/preinstall:
 .PHONY : Geometry/preinstall
+
+#=============================================================================
+# Target rules for target Geometry/CMakeFiles/Geometry.dir
+
+# All Build rule for target.
+Geometry/CMakeFiles/Geometry.dir/all:
+	$(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/depend
+	$(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles  1
+	@echo "Built target Geometry"
+.PHONY : Geometry/CMakeFiles/Geometry.dir/all
+
+# Include target in all.
+all: Geometry/CMakeFiles/Geometry.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Geometry/CMakeFiles/Geometry.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 Geometry/CMakeFiles/Geometry.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 0
+.PHONY : Geometry/CMakeFiles/Geometry.dir/rule
+
+# Convenience name for target.
+Geometry: Geometry/CMakeFiles/Geometry.dir/rule
+.PHONY : Geometry
+
+# clean rule for target.
+Geometry/CMakeFiles/Geometry.dir/clean:
+	$(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/clean
+.PHONY : Geometry/CMakeFiles/Geometry.dir/clean
+
+# clean rule for target.
+clean: Geometry/CMakeFiles/Geometry.dir/clean
+.PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory Mesh
@@ -104,11 +139,11 @@ FEspace/preinstall:
 # Directory level rules for directory Quadrature
 
 # Convenience name for "all" pass in the directory.
-Quadrature/all:
+Quadrature/all: Quadrature/CMakeFiles/Quadrature.dir/all
 .PHONY : Quadrature/all
 
 # Convenience name for "clean" pass in the directory.
-Quadrature/clean:
+Quadrature/clean: Quadrature/CMakeFiles/Quadrature.dir/clean
 .PHONY : Quadrature/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -116,53 +151,190 @@ Quadrature/preinstall:
 .PHONY : Quadrature/preinstall
 
 #=============================================================================
-# Directory level rules for directory Quadrature1D
-
-# Convenience name for "all" pass in the directory.
-Quadrature1D/all: Quadrature1D/CMakeFiles/Quadrature1D.dir/all
-.PHONY : Quadrature1D/all
-
-# Convenience name for "clean" pass in the directory.
-Quadrature1D/clean: Quadrature1D/CMakeFiles/Quadrature1D.dir/clean
-.PHONY : Quadrature1D/clean
-
-# Convenience name for "preinstall" pass in the directory.
-Quadrature1D/preinstall:
-.PHONY : Quadrature1D/preinstall
-
-#=============================================================================
-# Target rules for target Quadrature1D/CMakeFiles/Quadrature1D.dir
+# Target rules for target Quadrature/CMakeFiles/Quadrature.dir
 
 # All Build rule for target.
-Quadrature1D/CMakeFiles/Quadrature1D.dir/all:
-	$(MAKE) -f Quadrature1D/CMakeFiles/Quadrature1D.dir/build.make Quadrature1D/CMakeFiles/Quadrature1D.dir/depend
-	$(MAKE) -f Quadrature1D/CMakeFiles/Quadrature1D.dir/build.make Quadrature1D/CMakeFiles/Quadrature1D.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles  1 2
-	@echo "Built target Quadrature1D"
-.PHONY : Quadrature1D/CMakeFiles/Quadrature1D.dir/all
+Quadrature/CMakeFiles/Quadrature.dir/all: QuadratureRules/CMakeFiles/QuadratureRules.dir/all
+	$(MAKE) -f Quadrature/CMakeFiles/Quadrature.dir/build.make Quadrature/CMakeFiles/Quadrature.dir/depend
+	$(MAKE) -f Quadrature/CMakeFiles/Quadrature.dir/build.make Quadrature/CMakeFiles/Quadrature.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles  3
+	@echo "Built target Quadrature"
+.PHONY : Quadrature/CMakeFiles/Quadrature.dir/all
 
 # Include target in all.
-all: Quadrature1D/CMakeFiles/Quadrature1D.dir/all
+all: Quadrature/CMakeFiles/Quadrature.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-Quadrature1D/CMakeFiles/Quadrature1D.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 Quadrature1D/CMakeFiles/Quadrature1D.dir/all
+Quadrature/CMakeFiles/Quadrature.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 Quadrature/CMakeFiles/Quadrature.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 0
-.PHONY : Quadrature1D/CMakeFiles/Quadrature1D.dir/rule
+.PHONY : Quadrature/CMakeFiles/Quadrature.dir/rule
 
 # Convenience name for target.
-Quadrature1D: Quadrature1D/CMakeFiles/Quadrature1D.dir/rule
-.PHONY : Quadrature1D
+Quadrature: Quadrature/CMakeFiles/Quadrature.dir/rule
+.PHONY : Quadrature
 
 # clean rule for target.
-Quadrature1D/CMakeFiles/Quadrature1D.dir/clean:
-	$(MAKE) -f Quadrature1D/CMakeFiles/Quadrature1D.dir/build.make Quadrature1D/CMakeFiles/Quadrature1D.dir/clean
-.PHONY : Quadrature1D/CMakeFiles/Quadrature1D.dir/clean
+Quadrature/CMakeFiles/Quadrature.dir/clean:
+	$(MAKE) -f Quadrature/CMakeFiles/Quadrature.dir/build.make Quadrature/CMakeFiles/Quadrature.dir/clean
+.PHONY : Quadrature/CMakeFiles/Quadrature.dir/clean
 
 # clean rule for target.
-clean: Quadrature1D/CMakeFiles/Quadrature1D.dir/clean
+clean: Quadrature/CMakeFiles/Quadrature.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory QuadratureRules
+
+# Convenience name for "all" pass in the directory.
+QuadratureRules/all: QuadratureRules/CMakeFiles/QuadratureRules.dir/all
+.PHONY : QuadratureRules/all
+
+# Convenience name for "clean" pass in the directory.
+QuadratureRules/clean: QuadratureRules/CMakeFiles/QuadratureRules.dir/clean
+.PHONY : QuadratureRules/clean
+
+# Convenience name for "preinstall" pass in the directory.
+QuadratureRules/preinstall:
+.PHONY : QuadratureRules/preinstall
+
+#=============================================================================
+# Target rules for target QuadratureRules/CMakeFiles/QuadratureRules.dir
+
+# All Build rule for target.
+QuadratureRules/CMakeFiles/QuadratureRules.dir/all:
+	$(MAKE) -f QuadratureRules/CMakeFiles/QuadratureRules.dir/build.make QuadratureRules/CMakeFiles/QuadratureRules.dir/depend
+	$(MAKE) -f QuadratureRules/CMakeFiles/QuadratureRules.dir/build.make QuadratureRules/CMakeFiles/QuadratureRules.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles  4 5
+	@echo "Built target QuadratureRules"
+.PHONY : QuadratureRules/CMakeFiles/QuadratureRules.dir/all
+
+# Include target in all.
+all: QuadratureRules/CMakeFiles/QuadratureRules.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+QuadratureRules/CMakeFiles/QuadratureRules.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 QuadratureRules/CMakeFiles/QuadratureRules.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 0
+.PHONY : QuadratureRules/CMakeFiles/QuadratureRules.dir/rule
+
+# Convenience name for target.
+QuadratureRules: QuadratureRules/CMakeFiles/QuadratureRules.dir/rule
+.PHONY : QuadratureRules
+
+# clean rule for target.
+QuadratureRules/CMakeFiles/QuadratureRules.dir/clean:
+	$(MAKE) -f QuadratureRules/CMakeFiles/QuadratureRules.dir/build.make QuadratureRules/CMakeFiles/QuadratureRules.dir/clean
+.PHONY : QuadratureRules/CMakeFiles/QuadratureRules.dir/clean
+
+# clean rule for target.
+clean: QuadratureRules/CMakeFiles/QuadratureRules.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory FactoryQuad
+
+# Convenience name for "all" pass in the directory.
+FactoryQuad/all: FactoryQuad/CMakeFiles/MyQuadRules.dir/all
+.PHONY : FactoryQuad/all
+
+# Convenience name for "clean" pass in the directory.
+FactoryQuad/clean: FactoryQuad/CMakeFiles/MyQuadRules.dir/clean
+.PHONY : FactoryQuad/clean
+
+# Convenience name for "preinstall" pass in the directory.
+FactoryQuad/preinstall:
+.PHONY : FactoryQuad/preinstall
+
+#=============================================================================
+# Target rules for target FactoryQuad/CMakeFiles/MyQuadRules.dir
+
+# All Build rule for target.
+FactoryQuad/CMakeFiles/MyQuadRules.dir/all: QuadratureRules/CMakeFiles/QuadratureRules.dir/all
+	$(MAKE) -f FactoryQuad/CMakeFiles/MyQuadRules.dir/build.make FactoryQuad/CMakeFiles/MyQuadRules.dir/depend
+	$(MAKE) -f FactoryQuad/CMakeFiles/MyQuadRules.dir/build.make FactoryQuad/CMakeFiles/MyQuadRules.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles  2
+	@echo "Built target MyQuadRules"
+.PHONY : FactoryQuad/CMakeFiles/MyQuadRules.dir/all
+
+# Include target in all.
+all: FactoryQuad/CMakeFiles/MyQuadRules.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+FactoryQuad/CMakeFiles/MyQuadRules.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 FactoryQuad/CMakeFiles/MyQuadRules.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 0
+.PHONY : FactoryQuad/CMakeFiles/MyQuadRules.dir/rule
+
+# Convenience name for target.
+MyQuadRules: FactoryQuad/CMakeFiles/MyQuadRules.dir/rule
+.PHONY : MyQuadRules
+
+# clean rule for target.
+FactoryQuad/CMakeFiles/MyQuadRules.dir/clean:
+	$(MAKE) -f FactoryQuad/CMakeFiles/MyQuadRules.dir/build.make FactoryQuad/CMakeFiles/MyQuadRules.dir/clean
+.PHONY : FactoryQuad/CMakeFiles/MyQuadRules.dir/clean
+
+# clean rule for target.
+clean: FactoryQuad/CMakeFiles/MyQuadRules.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory TestQuad
+
+# Convenience name for "all" pass in the directory.
+TestQuad/all: TestQuad/CMakeFiles/TestQuad.dir/all
+.PHONY : TestQuad/all
+
+# Convenience name for "clean" pass in the directory.
+TestQuad/clean: TestQuad/CMakeFiles/TestQuad.dir/clean
+.PHONY : TestQuad/clean
+
+# Convenience name for "preinstall" pass in the directory.
+TestQuad/preinstall:
+.PHONY : TestQuad/preinstall
+
+#=============================================================================
+# Target rules for target TestQuad/CMakeFiles/TestQuad.dir
+
+# All Build rule for target.
+TestQuad/CMakeFiles/TestQuad.dir/all: Geometry/CMakeFiles/Geometry.dir/all
+TestQuad/CMakeFiles/TestQuad.dir/all: Quadrature/CMakeFiles/Quadrature.dir/all
+TestQuad/CMakeFiles/TestQuad.dir/all: QuadratureRules/CMakeFiles/QuadratureRules.dir/all
+	$(MAKE) -f TestQuad/CMakeFiles/TestQuad.dir/build.make TestQuad/CMakeFiles/TestQuad.dir/depend
+	$(MAKE) -f TestQuad/CMakeFiles/TestQuad.dir/build.make TestQuad/CMakeFiles/TestQuad.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles  7
+	@echo "Built target TestQuad"
+.PHONY : TestQuad/CMakeFiles/TestQuad.dir/all
+
+# Include target in all.
+all: TestQuad/CMakeFiles/TestQuad.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+TestQuad/CMakeFiles/TestQuad.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 TestQuad/CMakeFiles/TestQuad.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 0
+.PHONY : TestQuad/CMakeFiles/TestQuad.dir/rule
+
+# Convenience name for target.
+TestQuad: TestQuad/CMakeFiles/TestQuad.dir/rule
+.PHONY : TestQuad
+
+# clean rule for target.
+TestQuad/CMakeFiles/TestQuad.dir/clean:
+	$(MAKE) -f TestQuad/CMakeFiles/TestQuad.dir/build.make TestQuad/CMakeFiles/TestQuad.dir/clean
+.PHONY : TestQuad/CMakeFiles/TestQuad.dir/clean
+
+# clean rule for target.
+clean: TestQuad/CMakeFiles/TestQuad.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -184,10 +356,12 @@ TestQuad1D/preinstall:
 # Target rules for target TestQuad1D/CMakeFiles/TestQuad1D.dir
 
 # All Build rule for target.
-TestQuad1D/CMakeFiles/TestQuad1D.dir/all: Quadrature1D/CMakeFiles/Quadrature1D.dir/all
+TestQuad1D/CMakeFiles/TestQuad1D.dir/all: Quadrature/CMakeFiles/Quadrature.dir/all
+TestQuad1D/CMakeFiles/TestQuad1D.dir/all: QuadratureRules/CMakeFiles/QuadratureRules.dir/all
+TestQuad1D/CMakeFiles/TestQuad1D.dir/all: FactoryQuad/CMakeFiles/MyQuadRules.dir/all
 	$(MAKE) -f TestQuad1D/CMakeFiles/TestQuad1D.dir/build.make TestQuad1D/CMakeFiles/TestQuad1D.dir/depend
 	$(MAKE) -f TestQuad1D/CMakeFiles/TestQuad1D.dir/build.make TestQuad1D/CMakeFiles/TestQuad1D.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles  8
 	@echo "Built target TestQuad1D"
 .PHONY : TestQuad1D/CMakeFiles/TestQuad1D.dir/all
 
@@ -197,7 +371,7 @@ all: TestQuad1D/CMakeFiles/TestQuad1D.dir/all
 
 # Build rule for subdir invocation for target.
 TestQuad1D/CMakeFiles/TestQuad1D.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 TestQuad1D/CMakeFiles/TestQuad1D.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 0
 .PHONY : TestQuad1D/CMakeFiles/TestQuad1D.dir/rule
@@ -219,16 +393,51 @@ clean: TestQuad1D/CMakeFiles/TestQuad1D.dir/clean
 # Directory level rules for directory TestGeometry
 
 # Convenience name for "all" pass in the directory.
-TestGeometry/all:
+TestGeometry/all: TestGeometry/CMakeFiles/TestGeometry.dir/all
 .PHONY : TestGeometry/all
 
 # Convenience name for "clean" pass in the directory.
-TestGeometry/clean:
+TestGeometry/clean: TestGeometry/CMakeFiles/TestGeometry.dir/clean
 .PHONY : TestGeometry/clean
 
 # Convenience name for "preinstall" pass in the directory.
 TestGeometry/preinstall:
 .PHONY : TestGeometry/preinstall
+
+#=============================================================================
+# Target rules for target TestGeometry/CMakeFiles/TestGeometry.dir
+
+# All Build rule for target.
+TestGeometry/CMakeFiles/TestGeometry.dir/all: Geometry/CMakeFiles/Geometry.dir/all
+	$(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/depend
+	$(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles  6
+	@echo "Built target TestGeometry"
+.PHONY : TestGeometry/CMakeFiles/TestGeometry.dir/all
+
+# Include target in all.
+all: TestGeometry/CMakeFiles/TestGeometry.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+TestGeometry/CMakeFiles/TestGeometry.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 TestGeometry/CMakeFiles/TestGeometry.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles 0
+.PHONY : TestGeometry/CMakeFiles/TestGeometry.dir/rule
+
+# Convenience name for target.
+TestGeometry: TestGeometry/CMakeFiles/TestGeometry.dir/rule
+.PHONY : TestGeometry
+
+# clean rule for target.
+TestGeometry/CMakeFiles/TestGeometry.dir/clean:
+	$(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/clean
+.PHONY : TestGeometry/CMakeFiles/TestGeometry.dir/clean
+
+# clean rule for target.
+clean: TestGeometry/CMakeFiles/TestGeometry.dir/clean
+.PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory main1

@@ -52,38 +52,39 @@ include Quadrature/CMakeFiles/Quadrature.dir/progress.make
 # Include the compile flags for this target's objects.
 include Quadrature/CMakeFiles/Quadrature.dir/flags.make
 
-Quadrature/CMakeFiles/Quadrature.dir/Quadrature.cpp.o: Quadrature/CMakeFiles/Quadrature.dir/flags.make
-Quadrature/CMakeFiles/Quadrature.dir/Quadrature.cpp.o: Quadrature/Quadrature.cpp
+Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o: Quadrature/CMakeFiles/Quadrature.dir/flags.make
+Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o: Quadrature/NumericalQuad.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Quadrature/CMakeFiles/Quadrature.dir/Quadrature.cpp.o"
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Quadrature.dir/Quadrature.cpp.o -c /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/Quadrature.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o"
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o -c /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/NumericalQuad.cpp
 
-Quadrature/CMakeFiles/Quadrature.dir/Quadrature.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Quadrature.dir/Quadrature.cpp.i"
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/Quadrature.cpp > CMakeFiles/Quadrature.dir/Quadrature.cpp.i
+Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Quadrature.dir/NumericalQuad.cpp.i"
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/NumericalQuad.cpp > CMakeFiles/Quadrature.dir/NumericalQuad.cpp.i
 
-Quadrature/CMakeFiles/Quadrature.dir/Quadrature.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Quadrature.dir/Quadrature.cpp.s"
-	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/Quadrature.cpp -o CMakeFiles/Quadrature.dir/Quadrature.cpp.s
+Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Quadrature.dir/NumericalQuad.cpp.s"
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/NumericalQuad.cpp -o CMakeFiles/Quadrature.dir/NumericalQuad.cpp.s
 
-Quadrature/CMakeFiles/Quadrature.dir/Quadrature.cpp.o.requires:
-.PHONY : Quadrature/CMakeFiles/Quadrature.dir/Quadrature.cpp.o.requires
+Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o.requires:
+.PHONY : Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o.requires
 
-Quadrature/CMakeFiles/Quadrature.dir/Quadrature.cpp.o.provides: Quadrature/CMakeFiles/Quadrature.dir/Quadrature.cpp.o.requires
-	$(MAKE) -f Quadrature/CMakeFiles/Quadrature.dir/build.make Quadrature/CMakeFiles/Quadrature.dir/Quadrature.cpp.o.provides.build
-.PHONY : Quadrature/CMakeFiles/Quadrature.dir/Quadrature.cpp.o.provides
+Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o.provides: Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o.requires
+	$(MAKE) -f Quadrature/CMakeFiles/Quadrature.dir/build.make Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o.provides.build
+.PHONY : Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o.provides
 
-Quadrature/CMakeFiles/Quadrature.dir/Quadrature.cpp.o.provides.build: Quadrature/CMakeFiles/Quadrature.dir/Quadrature.cpp.o
+Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o.provides.build: Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o
 
 # Object files for target Quadrature
 Quadrature_OBJECTS = \
-"CMakeFiles/Quadrature.dir/Quadrature.cpp.o"
+"CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o"
 
 # External object files for target Quadrature
 Quadrature_EXTERNAL_OBJECTS =
 
-Quadrature/libQuadrature.dylib: Quadrature/CMakeFiles/Quadrature.dir/Quadrature.cpp.o
+Quadrature/libQuadrature.dylib: Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o
 Quadrature/libQuadrature.dylib: Quadrature/CMakeFiles/Quadrature.dir/build.make
+Quadrature/libQuadrature.dylib: QuadratureRules/libQuadratureRules.dylib
 Quadrature/libQuadrature.dylib: Quadrature/CMakeFiles/Quadrature.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libQuadrature.dylib"
 	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Quadrature.dir/link.txt --verbose=$(VERBOSE)
@@ -92,7 +93,7 @@ Quadrature/libQuadrature.dylib: Quadrature/CMakeFiles/Quadrature.dir/link.txt
 Quadrature/CMakeFiles/Quadrature.dir/build: Quadrature/libQuadrature.dylib
 .PHONY : Quadrature/CMakeFiles/Quadrature.dir/build
 
-Quadrature/CMakeFiles/Quadrature.dir/requires: Quadrature/CMakeFiles/Quadrature.dir/Quadrature.cpp.o.requires
+Quadrature/CMakeFiles/Quadrature.dir/requires: Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o.requires
 .PHONY : Quadrature/CMakeFiles/Quadrature.dir/requires
 
 Quadrature/CMakeFiles/Quadrature.dir/clean:

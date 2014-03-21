@@ -25,7 +25,7 @@ CMAKE_COLOR_MAKEFILE:BOOL=ON
 CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
 //Flags used by the compiler during all build types.
-CMAKE_CXX_FLAGS:STRING=
+CMAKE_CXX_FLAGS:STRING=-std=c++11
 
 //Flags used by the compiler during debug builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g
@@ -163,11 +163,14 @@ CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Compile factory lib
+COMPILE_FACTORY:BOOL=ON
+
 //Compile fespace library
 COMPILE_FESPACE:BOOL=OFF
 
 //Compile geometry library
-COMPILE_GEOMETRY:BOOL=OFF
+COMPILE_GEOMETRY:BOOL=ON
 
 //Compile exe main1
 COMPILE_MAIN1:BOOL=OFF
@@ -176,13 +179,13 @@ COMPILE_MAIN1:BOOL=OFF
 COMPILE_MESH:BOOL=OFF
 
 //Compile quad library
-COMPILE_QUAD:BOOL=OFF
-
-//Compile quad1D library
-COMPILE_QUAD1D:BOOL=ON
+COMPILE_QUAD:BOOL=ON
 
 //Compile exe testgeom
-COMPILE_TESTGEOM:BOOL=OFF
+COMPILE_TESTGEOM:BOOL=ON
+
+//Compile exe testgeom
+COMPILE_TESTQUAD:BOOL=ON
 
 //Compile exe testgeom
 COMPILE_TESTQUAD1D:BOOL=ON
@@ -195,6 +198,15 @@ FEspace_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
 FEspace_SOURCE_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FEspace
+
+//Value Computed by CMake
+Factory_BINARY_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Factory
+
+//Dependencies for the target
+Factory_LIB_DEPENDS:STATIC=general;Quadrature;
+
+//Value Computed by CMake
+Factory_SOURCE_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Factory
 
 //Value Computed by CMake
 Geometry_BINARY_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry
@@ -215,19 +227,28 @@ Mesh_LIB_DEPENDS:STATIC=
 Mesh_SOURCE_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Mesh
 
 //Value Computed by CMake
-Quadrature1D_BINARY_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature1D
+MyQuadRules_BINARY_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FactoryQuad
 
-//Dependencies for target
-Quadrature1D_LIB_DEPENDS:STATIC=
+//Dependencies for the target
+MyQuadRules_LIB_DEPENDS:STATIC=general;QuadratureRules;
 
 //Value Computed by CMake
-Quadrature1D_SOURCE_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature1D
+MyQuadRules_SOURCE_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FactoryQuad
+
+//Value Computed by CMake
+QuadratureRules_BINARY_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/QuadratureRules
+
+//Dependencies for target
+QuadratureRules_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+QuadratureRules_SOURCE_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/QuadratureRules
 
 //Value Computed by CMake
 Quadrature_BINARY_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature
 
-//Dependencies for target
-Quadrature_LIB_DEPENDS:STATIC=
+//Dependencies for the target
+Quadrature_LIB_DEPENDS:STATIC=general;QuadratureRules;
 
 //Value Computed by CMake
 Quadrature_SOURCE_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature
@@ -249,6 +270,12 @@ TestQuad1D_BINARY_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_COD
 
 //Value Computed by CMake
 TestQuad1D_SOURCE_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/TestQuad1D
+
+//Value Computed by CMake
+TestQuad_BINARY_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/TestQuad
+
+//Value Computed by CMake
+TestQuad_SOURCE_DIR:STATIC=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/TestQuad
 
 //Use shared library
 USE_SHARED:BOOL=ON
@@ -286,6 +313,8 @@ CMAKE_CPACK_COMMAND:INTERNAL=/opt/local/bin/cpack
 CMAKE_CTEST_COMMAND:INTERNAL=/opt/local/bin/ctest
 //ADVANCED property for variable: CMAKE_CXX_FLAGS
 CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
+//MODIFIED property for variable: CMAKE_CXX_FLAGS
+CMAKE_CXX_FLAGS-MODIFIED:INTERNAL=ON
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
 CMAKE_CXX_FLAGS_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_MINSIZEREL
@@ -327,8 +356,6 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 CMAKE_HOME_DIRECTORY:INTERNAL=/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE
 //ADVANCED property for variable: CMAKE_INSTALL_NAME_TOOL
 CMAKE_INSTALL_NAME_TOOL-ADVANCED:INTERNAL=1
-//MODIFIED property for variable: CMAKE_INSTALL_PREFIX
-CMAKE_INSTALL_PREFIX-MODIFIED:INTERNAL=ON
 //ADVANCED property for variable: CMAKE_MAKE_PROGRAM
 CMAKE_MAKE_PROGRAM-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
@@ -342,7 +369,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=9
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=11
 //Path to CMake installation.
 CMAKE_ROOT:INTERNAL=/opt/local/share/cmake-2.8
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
@@ -375,14 +402,14 @@ CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //MODIFIED property for variable: COMPILE_FESPACE
 COMPILE_FESPACE-MODIFIED:INTERNAL=ON
-//MODIFIED property for variable: COMPILE_GEOMETRY
-COMPILE_GEOMETRY-MODIFIED:INTERNAL=ON
 //MODIFIED property for variable: COMPILE_MAIN1
 COMPILE_MAIN1-MODIFIED:INTERNAL=ON
 //MODIFIED property for variable: COMPILE_MESH
 COMPILE_MESH-MODIFIED:INTERNAL=ON
-//MODIFIED property for variable: COMPILE_QUAD
-COMPILE_QUAD-MODIFIED:INTERNAL=ON
 //MODIFIED property for variable: COMPILE_TESTGEOM
 COMPILE_TESTGEOM-MODIFIED:INTERNAL=ON
+//MODIFIED property for variable: COMPILE_TESTQUAD
+COMPILE_TESTQUAD-MODIFIED:INTERNAL=ON
+//MODIFIED property for variable: COMPILE_TESTQUAD1D
+COMPILE_TESTQUAD1D-MODIFIED:INTERNAL=ON
 

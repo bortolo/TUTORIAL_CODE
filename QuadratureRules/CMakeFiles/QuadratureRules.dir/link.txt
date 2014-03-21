@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++11 -dynamiclib -Wl,-headerpad_max_install_names   -o libQuadratureRules.dylib -install_name /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/QuadratureRules/libQuadratureRules.dylib CMakeFiles/QuadratureRules.dir/Quadrature.cpp.o CMakeFiles/QuadratureRules.dir/Quadrature1D.cpp.o 

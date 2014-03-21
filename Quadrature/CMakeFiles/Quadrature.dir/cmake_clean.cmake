@@ -1,5 +1,5 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/Quadrature.dir/Quadrature.cpp.o"
+  "CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o"
   "libQuadrature.pdb"
   "libQuadrature.dylib"
 )

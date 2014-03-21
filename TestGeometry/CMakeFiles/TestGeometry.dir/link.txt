@@ -1,1 +1,1 @@
-/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/TestGeometry.dir/Test.cpp.o  -o TestGeometry  ../Geometry/libGeometry.dylib 
+/usr/bin/c++   -std=c++11 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/TestGeometry.dir/Test.cpp.o  -o TestGeometry  ../Geometry/libGeometry.dylib 

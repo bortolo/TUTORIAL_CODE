@@ -1,1 +1,1 @@
-/usr/bin/c++   -dynamiclib -Wl,-headerpad_max_install_names   -o libGeometry.dylib -install_name /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/libGeometry.dylib CMakeFiles/Geometry.dir/Geometry.cpp.o 
+/usr/bin/c++  -std=c++11 -dynamiclib -Wl,-headerpad_max_install_names   -o libGeometry.dylib -install_name /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/libGeometry.dylib CMakeFiles/Geometry.dir/Geometry.cpp.o 

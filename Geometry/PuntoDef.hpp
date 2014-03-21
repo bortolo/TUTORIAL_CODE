@@ -15,14 +15,14 @@ template<int dim>
 Punto<dim>::~Punto(){}
 
 template<int dim>
-Punto<dim> & Punto<dim>::operator=(Punto<dim> const & PT){
+Punto<dim> & Punto<dim>::operator=(const Punto<dim> & PT){
   this->pt=PT.pt;
   return *this;
 }
 
 
 template<int dim>
-void Punto<dim>::ShowMe(){
+void Punto<dim>::ShowMe()const{
 
   for(size_t i(0);i<dim;i++)
     std::cout<<pt[i]<<'\t';

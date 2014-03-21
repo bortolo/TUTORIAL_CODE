@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Factory/Factory.hpp
+map
+-
+functional
+-
+iostream
+-
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Factory/QuadFactory.cpp
+QuadFactory.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Factory/QuadFactory.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Factory/QuadFactory.hpp
+string
+-
+Factory.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Factory/Factory.hpp
+../Quadrature/Quadrature1D.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/Quadrature1D.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/Quadrature1D.hpp
+vector
+-
+iostream
+-
+

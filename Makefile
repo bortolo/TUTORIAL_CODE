@@ -133,17 +133,69 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Quadrature1D
+# Target rules for targets named Geometry
 
 # Build rule for target.
-Quadrature1D: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Quadrature1D
-.PHONY : Quadrature1D
+Geometry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Geometry
+.PHONY : Geometry
 
 # fast build rule for target.
-Quadrature1D/fast:
-	$(MAKE) -f Quadrature1D/CMakeFiles/Quadrature1D.dir/build.make Quadrature1D/CMakeFiles/Quadrature1D.dir/build
-.PHONY : Quadrature1D/fast
+Geometry/fast:
+	$(MAKE) -f Geometry/CMakeFiles/Geometry.dir/build.make Geometry/CMakeFiles/Geometry.dir/build
+.PHONY : Geometry/fast
+
+#=============================================================================
+# Target rules for targets named Quadrature
+
+# Build rule for target.
+Quadrature: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Quadrature
+.PHONY : Quadrature
+
+# fast build rule for target.
+Quadrature/fast:
+	$(MAKE) -f Quadrature/CMakeFiles/Quadrature.dir/build.make Quadrature/CMakeFiles/Quadrature.dir/build
+.PHONY : Quadrature/fast
+
+#=============================================================================
+# Target rules for targets named QuadratureRules
+
+# Build rule for target.
+QuadratureRules: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 QuadratureRules
+.PHONY : QuadratureRules
+
+# fast build rule for target.
+QuadratureRules/fast:
+	$(MAKE) -f QuadratureRules/CMakeFiles/QuadratureRules.dir/build.make QuadratureRules/CMakeFiles/QuadratureRules.dir/build
+.PHONY : QuadratureRules/fast
+
+#=============================================================================
+# Target rules for targets named MyQuadRules
+
+# Build rule for target.
+MyQuadRules: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MyQuadRules
+.PHONY : MyQuadRules
+
+# fast build rule for target.
+MyQuadRules/fast:
+	$(MAKE) -f FactoryQuad/CMakeFiles/MyQuadRules.dir/build.make FactoryQuad/CMakeFiles/MyQuadRules.dir/build
+.PHONY : MyQuadRules/fast
+
+#=============================================================================
+# Target rules for targets named TestQuad
+
+# Build rule for target.
+TestQuad: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestQuad
+.PHONY : TestQuad
+
+# fast build rule for target.
+TestQuad/fast:
+	$(MAKE) -f TestQuad/CMakeFiles/TestQuad.dir/build.make TestQuad/CMakeFiles/TestQuad.dir/build
+.PHONY : TestQuad/fast
 
 #=============================================================================
 # Target rules for targets named TestQuad1D
@@ -158,6 +210,19 @@ TestQuad1D/fast:
 	$(MAKE) -f TestQuad1D/CMakeFiles/TestQuad1D.dir/build.make TestQuad1D/CMakeFiles/TestQuad1D.dir/build
 .PHONY : TestQuad1D/fast
 
+#=============================================================================
+# Target rules for targets named TestGeometry
+
+# Build rule for target.
+TestGeometry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestGeometry
+.PHONY : TestGeometry
+
+# fast build rule for target.
+TestGeometry/fast:
+	$(MAKE) -f TestGeometry/CMakeFiles/TestGeometry.dir/build.make TestGeometry/CMakeFiles/TestGeometry.dir/build
+.PHONY : TestGeometry/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -169,8 +234,13 @@ help:
 	@echo "... install/local"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Quadrature1D"
+	@echo "... Geometry"
+	@echo "... Quadrature"
+	@echo "... QuadratureRules"
+	@echo "... MyQuadRules"
+	@echo "... TestQuad"
 	@echo "... TestQuad1D"
+	@echo "... TestGeometry"
 .PHONY : help
 
 

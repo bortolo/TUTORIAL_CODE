@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Geometry.hpp
+iostream
+-
+vector
+-
+PuntoDef.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/PuntoDef.hpp
+TriangleDef.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/TriangleDef.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/PuntoDef.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/TriangleDef.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/QuadratureRules/Quadrature.cpp
+Quadrature.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/QuadratureRules/Quadrature.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/QuadratureRules/Quadrature.hpp
+vector
+-
+../Geometry/Geometry.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Geometry.hpp
+

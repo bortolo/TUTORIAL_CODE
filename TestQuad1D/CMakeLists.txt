@@ -10,10 +10,7 @@ add_executable(${PROJECT_NAME} ${${PROJECT_NAME}_headers}
 ${${PROJECT_NAME}_sources} )
 
 
-
-if (COMPILE_QUAD1D)
-  set (EXTRA_LIBS ${EXTRA_LIBS} Quadrature1D)
-endif (COMPILE_QUAD1D)
+set (EXTRA_LIBS ${EXTRA_LIBS} MyQuadRules Quadrature)
 
 
 target_link_libraries(${PROJECT_NAME} ${EXTRA_LIBS})

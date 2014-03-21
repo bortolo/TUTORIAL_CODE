@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Punto.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Geometry.hpp
 iostream
 -
 vector
@@ -18,13 +18,27 @@ TriangleDef.hpp
 
 /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/PuntoDef.hpp
 
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/ShapeManage.hpp
+../Include/PolicyCreation.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Include/PolicyCreation.hpp
+Geometry.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Geometry.hpp
+
 /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/TriangleDef.hpp
+
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Include/PolicyCreation.hpp
+stdio.h
+-
+stdlib.h
+-
 
 /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/TestGeometry/Test.cpp
 iostream
 -
 string
 -
-../Geometry/Punto.hpp
-/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Punto.hpp
+../Geometry/Geometry.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Geometry.hpp
+../Geometry/ShapeManage.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/ShapeManage.hpp
 

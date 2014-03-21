@@ -203,6 +203,9 @@ FEspace/CMakeFiles/FEspace.dir/FEspace.cpp.o: FEspace/../EIGEN/Eigen/src/SVD/Upp
 FEspace/CMakeFiles/FEspace.dir/FEspace.cpp.o: FEspace/../EIGEN/Eigen/src/misc/Image.h
 FEspace/CMakeFiles/FEspace.dir/FEspace.cpp.o: FEspace/../EIGEN/Eigen/src/misc/Kernel.h
 FEspace/CMakeFiles/FEspace.dir/FEspace.cpp.o: FEspace/../EIGEN/Eigen/src/misc/Solve.h
+FEspace/CMakeFiles/FEspace.dir/FEspace.cpp.o: FEspace/../Geometry/Punto.hpp
+FEspace/CMakeFiles/FEspace.dir/FEspace.cpp.o: FEspace/../Geometry/PuntoDef.hpp
+FEspace/CMakeFiles/FEspace.dir/FEspace.cpp.o: FEspace/../Geometry/TriangleDef.hpp
 FEspace/CMakeFiles/FEspace.dir/FEspace.cpp.o: FEspace/../Quadrature/Quadrature.hpp
 FEspace/CMakeFiles/FEspace.dir/FEspace.cpp.o: FEspace/FEspace.cpp
 FEspace/CMakeFiles/FEspace.dir/FEspace.cpp.o: FEspace/FEspace.hpp

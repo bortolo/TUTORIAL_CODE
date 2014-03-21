@@ -132,17 +132,59 @@ depend:
 	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+Quadrature/CMakeFiles/Quadrature.dir/rule:
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f CMakeFiles/Makefile2 Quadrature/CMakeFiles/Quadrature.dir/rule
+.PHONY : Quadrature/CMakeFiles/Quadrature.dir/rule
+
+# Convenience name for target.
+Quadrature: Quadrature/CMakeFiles/Quadrature.dir/rule
+.PHONY : Quadrature
+
+# fast build rule for target.
+Quadrature/fast:
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Quadrature/CMakeFiles/Quadrature.dir/build.make Quadrature/CMakeFiles/Quadrature.dir/build
+.PHONY : Quadrature/fast
+
+NumericalQuad.o: NumericalQuad.cpp.o
+.PHONY : NumericalQuad.o
+
+# target to build an object file
+NumericalQuad.cpp.o:
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Quadrature/CMakeFiles/Quadrature.dir/build.make Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.o
+.PHONY : NumericalQuad.cpp.o
+
+NumericalQuad.i: NumericalQuad.cpp.i
+.PHONY : NumericalQuad.i
+
+# target to preprocess a source file
+NumericalQuad.cpp.i:
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Quadrature/CMakeFiles/Quadrature.dir/build.make Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.i
+.PHONY : NumericalQuad.cpp.i
+
+NumericalQuad.s: NumericalQuad.cpp.s
+.PHONY : NumericalQuad.s
+
+# target to generate assembly for a file
+NumericalQuad.cpp.s:
+	cd /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE && $(MAKE) -f Quadrature/CMakeFiles/Quadrature.dir/build.make Quadrature/CMakeFiles/Quadrature.dir/NumericalQuad.cpp.s
+.PHONY : NumericalQuad.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... Quadrature"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... NumericalQuad.o"
+	@echo "... NumericalQuad.i"
+	@echo "... NumericalQuad.s"
 .PHONY : help
 
 

@@ -10,7 +10,9 @@ SET(CMAKE_CXX_COMPILER_ID "Clang")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature1D/CMakeFiles/Quadrature1D.dir/DependInfo.cmake"
+  "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/FactoryQuad/CMakeFiles/MyQuadRules.dir/DependInfo.cmake"
+  "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Quadrature/CMakeFiles/Quadrature.dir/DependInfo.cmake"
+  "/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/QuadratureRules/CMakeFiles/QuadratureRules.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

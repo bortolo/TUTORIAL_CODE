@@ -1,1 +1,1 @@
-/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/TestQuad1D.dir/main.cpp.o  -o TestQuad1D  ../Quadrature1D/libQuadrature1D.dylib 
+/usr/bin/c++   -std=c++11 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/TestQuad1D.dir/main.cpp.o  -o TestQuad1D  ../FactoryQuad/libMyQuadRules.dylib ../Quadrature/libQuadrature.dylib ../QuadratureRules/libQuadratureRules.dylib 

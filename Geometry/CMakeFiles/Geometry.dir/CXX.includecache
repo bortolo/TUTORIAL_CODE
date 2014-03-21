@@ -7,10 +7,10 @@
 #IncludeRegexTransform: 
 
 /Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Geometry.cpp
-Punto.hpp
-/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Punto.hpp
+Geometry.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Geometry.hpp
 
-/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Punto.hpp
+/Users/andreabortolossi/Desktop/CODICI/TUTORIAL_CODE/Geometry/Geometry.hpp
 iostream
 -
 vector
