@@ -5,17 +5,20 @@
 #include <vector>
 #include <iostream>
 
-typedef double (*PtrFunction)(double);
+typedef double (*PtrFunction)(double,double,double);
+
 
 class Quadrature1D{
 public:
   Quadrature1D(){};
   virtual ~Quadrature1D();
   virtual Quadrature1D * clone() const = 0;
-  virtual double apply(PtrFunction const & f,double const & a,double const & b) = 0;
+
+  template<typename element>
+  virtual double apply(PtrFunction const & f,element const & el) = 0;
+  
   virtual void ShowMe()const{}
 };
-
 
 
 class StandardQuad1D: public Quadrature1D{
@@ -23,12 +26,15 @@ class StandardQuad1D: public Quadrature1D{
 public:
   StandardQuad1D(){};
   virtual ~StandardQuad1D();
-  virtual double apply(PtrFunction const & f,double const & a,double const & b);
+
+  template<typename element>
+  virtual double apply(PtrFunction const & f,element const & el);
+
   virtual Quadrature1D * clone() const; 
   virtual void ShowMe()const{};
 protected:
-  std::vector<double> M_weight;
-  std::vector<double> M_nodes;
+  std::vector<Punto<3> > M_weight;
+  std::vector<Punto<3> > M_nodes;
 
 };
 

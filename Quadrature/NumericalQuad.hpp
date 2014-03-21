@@ -35,20 +35,33 @@ NumericalQuad<dim>::NumericalQuad(const Quadrature1D * quad,mymesh<myelement<dim
   rule=quad->clone();
 }
 
-template<int dim>
-double NumericalQuad<dim>::apply(PtrFunction const & f)const{
+template<>
+double NumericalQuad<1>::apply(PtrFunction const & f)const{
 
   double result(0);
 
   for(unsigned int i(0);i<mesh.size_element();i++){
-
-  myelement<dim> el = mesh.get_el(i);
-    Punto<dim> a=el.vertex(0);
-    Punto<dim> b=el.vertex(1);
-    double ax = a.coord(0);
-    double bx = b.coord(0);
-    result += rule->apply(f,ax,bx);
+    myelement<dim> el = mesh.get_el(i);
+    result += rule->apply<myedge>(f,el);
   }
+  return result;
+}
+
+
+template<>
+double NumericalQuad<2>::apply(PtrFunction const & f)const{
+
+  double result(0);
+  std::cout<<"This is numerical quad 2D"<<std::endl;
+  return result;
+}
+
+
+template<>
+double NumericalQuad<3>::apply(PtrFunction const & f)const{
+
+  double result(0);
+  std::cout<<"This is numerical quad 3D"<<std::endl;
   return result;
 }
 
